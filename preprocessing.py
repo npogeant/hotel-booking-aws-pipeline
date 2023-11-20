@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # Set local path prefix in the processing container
     local_dir = "/opt/ml/processing"    
     
-    input_data_path = os.path.join("/opt/ml/processing/bookings", "bookings.csv")
+    input_data_path = os.path.join("/opt/ml/processing/bookings", "data.csv")
     
     logger.info("Reading data from {}".format(input_data_path))
     df = pd.read_csv(input_data_path)
